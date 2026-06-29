@@ -1,0 +1,33 @@
+{
+  "id": "first-aid-schema-001",
+  "title": "Define guide, source, provenance, and sign-off JSON Schemas",
+  "project": "first-aid-open",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["health", "safety", "first-aid", "schema"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "first-aid-open is a HIGH-risk, safety-critical project publishing illustrated first-aid guides paraphrased from and cited to official sources (ILCOR/WHO/IFRC). Before any clinical content exists, the project needs machine-readable schemas that make the safety gates enforceable in tooling: every clinical claim must trace to a current source, every guide must carry safety framing and region applicability, and nothing may ship without a recorded credentialed-clinician sign-off. This task defines those schemas; it ships no clinical content.",
+  "objective": "Define and validate JSON Schemas (Ajv) for: (1) guide frontmatter (per-claim sourceRefs, region[], sourceVersionStamp, reviewBy, signOff[] with name/credential/date/scope/sourceCycleVerified, and a mandatory safetyFraming block); (2) source-registry entries (publisher, title, url, publicationDate, guidelineCycle, licenseNote, reusePosture defaulting to paraphrase-only, accessDate); (3) the sign-off record supporting dual-control. These schemas are the foundation the fail-closed CI gates build on.",
+  "acceptanceCriteria": [
+    "Guide, source, and sign-off schemas defined as Ajv-validated JSON Schema with additionalProperties:false.",
+    "Guide schema REQUIRES per-claim sourceRefs, region[], sourceVersionStamp, reviewBy, signOff[], and safetyFraming.",
+    "Source schema includes a reusePosture enum defaulting to 'paraphrase-only' and a per-source licenseNote.",
+    "Sign-off schema supports dual-control (array with configurable minItems for top-tier scenarios).",
+    "Valid fixtures pass and invalid fixtures (missing source, missing sign-off, missing framing) fail.",
+    "pnpm build && pnpm test && pnpm lint all pass; commit signed off (DCO); changeset added."
+  ],
+  "resources": [
+    "PLAN.md#6-solution-approach--architecture",
+    "PLAN.md#8-quality-review--risk-gates",
+    "packages/schema/src/schemas.ts"
+  ],
+  "output": "A PR adding the guide/source/sign-off JSON Schemas, Ajv validation, fixtures (valid + invalid), and tests, with no clinical content included.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}
