@@ -145,7 +145,7 @@ intersection is the white space.
   for the low-resource bystander the IFRC app and SJA web do not serve well.
 - **D-4: Honest scope.** Narrow-deep-verified core + unmistakable "not a substitute/take a course/
   call your local number," with cited-but-not-endorsed authorities — credibility through humility.
-- **D-5: Composability.** Clean source-cited base that Elyos siblings (translations, phrasebooks,
+- **D-5: Composability.** Clean source-cited base that Hee-Lee Oss siblings (translations, phrasebooks,
   prepper, resource-maps) derive from — a platform play, not a single artifact.
 
 ---
@@ -222,7 +222,7 @@ all listed tasks are donated-lane today.)
   - `easy-read-plus` — low-literacy/dyslexia-friendly renderings of the same verified guides.
 - **Perpendicular (platform leverage):**
   - **A reusable "sourced-health-content engine"** (schema + provenance lint + fail-closed sign-off
-    gate + freshness watcher + framing lint + offline/print renderers) as a standalone Elyos package
+    gate + freshness watcher + framing lint + offline/print renderers) as a standalone Hee-Lee Oss package
     that any HIGH-risk health-content project adopts — the highest-leverage spin-off.
   - `community-resource-maps` / `proper-prepper` — embed verified guides + map to local emergency
     numbers/facilities (a natural internal requestor to flip `verifiedNeed`).

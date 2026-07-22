@@ -61,7 +61,7 @@ print/offline/web renderings. Code is **MIT**; content is **CC BY-SA 4.0** (shar
 derivatives open, with attribution to first-aid-open and acknowledgement that guidance derives from
 the cited authorities).
 
-This is the highest-risk tier Elyos defines. Accordingly the plan front-loads three gates —
+This is the highest-risk tier Hee-Lee Oss defines. Accordingly the plan front-loads three gates —
 **provenance**, **clinical expert sign-off**, and **currency/freshness** — into the pipeline and
 the Definition of Shipped. It does **not** assume a partner is in place: a clinical reviewer pool, a
 medical advisory steward, and any distribution partner are all marked **TO BE SECURED**, and **no
@@ -95,10 +95,10 @@ copyrighted material and without pretending to be a substitute for training or p
 - **Community educators, CERT/disaster-prep groups, schools, NGOs, clinics in low-resource
   settings** — who need printable, translatable, freely-licensed material they can legally
   distribute (today they often cannot reuse copyrighted manuals).
-- **Translators and accessibility projects** within Elyos (e.g. `vital-info-translations`,
+- **Translators and accessibility projects** within Hee-Lee Oss (e.g. `vital-info-translations`,
   `emergency-phrasebooks`, `easy-read-plus`) — who need a clean, source-cited English base to
   derive from.
-- **Downstream Elyos projects** — `proper-prepper` (disaster-prep toolkit) and
+- **Downstream Hee-Lee Oss projects** — `proper-prepper` (disaster-prep toolkit) and
   `community-resource-maps` can embed verified guides.
 
 **Verified need:** **TO BE SECURED.** The *general* need is well-evidenced (bystander-intervention
@@ -110,7 +110,7 @@ organisation, or a low-resource-setting clinic network) confirms the need and ta
 overstate demand: we have a strong *general* case, not yet a *specific committed* one.
 
 **Partner / requestor:** **TO BE SECURED** — see §11. Candidate categories: a national Red Cross/
-Red Crescent society or community-first-aid NGO; a global-health education nonprofit; an Elyos
+Red Crescent society or community-first-aid NGO; a global-health education nonprofit; a Hee-Lee Oss
 sibling project acting as internal requestor (`proper-prepper`).
 
 ---
@@ -131,7 +131,7 @@ sibling project acting as internal requestor (`proper-prepper`).
 - **G5 — Currency by design.** Each guide carries a source-version stamp and a review-by date; a
   freshness process flags guides when their upstream guidance changes (e.g. a new ILCOR cycle).
 - **G6 — A reusable safety-content pipeline.** The schema, provenance model, review gate, and
-  guardrail framing become a template other HIGH-risk Elyos health projects can adopt.
+  guardrail framing become a template other HIGH-risk Hee-Lee Oss health projects can adopt.
 
 **Non-goals (explicit)**
 
@@ -163,7 +163,7 @@ outcome; it appears only as a capacity indicator.
 | O1 | Verified core guides **shipped with full expert sign-off** | 0 | 8–12 core scenarios | Review-gate records (signed-off count) |
 | O2 | Clinical claims with complete, current provenance | n/a | 100% (hard gate) | Automated provenance lint; 0 unsourced claims permitted |
 | O3 | Guides past expert sign-off **with named credentialed reviewer recorded** | 0 | 100% of shipped | Sign-off ledger entries |
-| O4 | Reuse by beneficiaries (orgs/projects that adopt or redistribute) | 0 | ≥3 confirmed adopters (e.g. an NGO, a school, an Elyos sibling) | Adoption log / partner confirmation |
+| O4 | Reuse by beneficiaries (orgs/projects that adopt or redistribute) | 0 | ≥3 confirmed adopters (e.g. an NGO, a school, a Hee-Lee Oss sibling) | Adoption log / partner confirmation |
 | O5 | Translations derived from the base (meaning-localised, re-reviewed) | 0 | ≥2 languages with regional review | Linked translation deeds w/ regional sign-off |
 | O6 | Freshness: shipped guides within their review-by window | n/a | 100% (else auto-flagged & un-published) | Freshness job; stale = safety incident |
 | O7 | Accessibility conformance of published renderings | n/a | WCAG 2.2 AA checks pass; print + offline render verified | a11y CI + manual audit |
@@ -253,7 +253,7 @@ pipeline, the content schema, the gates, and the renderers.
 
 **6.3 Tech stack**
 
-- TypeScript, ESM, pnpm workspaces (per Elyos conventions).
+- TypeScript, ESM, pnpm workspaces (per Hee-Lee Oss conventions).
 - Content: MDX + YAML frontmatter; JSON Schema (Ajv) for metadata validation (mirrors the existing
   `packages/schema` approach).
 - Static site generator (decision in M0; lean toward Astro/Eleventy for static, accessible,
@@ -398,7 +398,7 @@ ship until M2's reviewer pool exists.**
 | **M2 — Reviewer pool & first SHIPPED guide** | Secure ≥1 credentialed reviewer; ship the first fully signed-off guide. | ≥1 credentialed clinical reviewer **secured** and onboarded (COI + scope recorded); the M1 guide receives recorded sign-off(s) (dual control for top-tier scenarios) and is **Shipped** per §8.2 in web+print+offline; sign-off ledger live. *(This is the first true "deed delivered.")* |
 | **M3 — Core library** | Ship the 8–12-scenario verified core. | ≥8 core scenarios Shipped with full sign-off; freshness watcher live and flagging; ≥1 confirmed external/sibling adopter (O4). |
 | **M4 — Reach: i18n, accessibility depth, partner distribution** | Make the verified core reusable across languages and channels with regional re-review. | ≥2 languages derived **with regional clinical/contextual re-review** (not raw MT); accessibility audit (AA) passed across renderings; a distribution partner or sibling-project integration confirmed; freshness SLA met (O6=100%). |
-| **M5 — Sustainability & template** | Hand off to durable maintenance; publish the reusable safety-content pipeline template. | Maintenance rota + review-by cadence operating; ≥1 review-cycle refresh completed on a shipped guide; pipeline/guardrail template documented for reuse by other HIGH-risk Elyos health projects; outcome metrics (O1–O9) reported. |
+| **M5 — Sustainability & template** | Hand off to durable maintenance; publish the reusable safety-content pipeline template. | Maintenance rota + review-by cadence operating; ≥1 review-cycle refresh completed on a shipped guide; pipeline/guardrail template documented for reuse by other HIGH-risk Hee-Lee Oss health projects; outcome metrics (O1–O9) reported. |
 
 **Dependencies / sequencing:** M0→M1 are agent-doable now (donated lane, no reviewer needed to
 *draft*). **M2 gates everything clinical** and depends on securing a credentialed reviewer (the
@@ -409,7 +409,7 @@ critical-path human dependency). M4 depends on M3 core + translation siblings + 
 ## 10. Work breakdown
 
 The itemised, schema-mapped backlog lives in **`TASKS.md`**, organised by the M0–M5 milestones
-above. Each task maps to an Elyos Task JSON (§ schema), carries a `riskTier`, an explicit reviewer,
+above. Each task maps to a Hee-Lee Oss Task JSON (§ schema), carries a `riskTier`, an explicit reviewer,
 and — for all clinical deliverables — `verifiedNeed: false` until a partner is secured and the
 clinical sign-off gate is satisfied. TASKS.md contains milestone task tables, acceptance criteria
 for the key tasks, per-milestone Definitions of Done, a backlog, and a schema-valid example Task
@@ -424,14 +424,14 @@ JSON for the first M0 task.
 | **Maintainer** | TBD | **TO BE SECURED** | Owns the repo, schema, CI gates, releases; ensures no clinical content ships unsigned. |
 | **Clinical steward (medical advisory owner)** | TBD — must be a senior credentialed clinician (e.g. EM physician / paramedic lead) | **TO BE SECURED (critical)** | Sets/approves the scenario list & priority, arbitrates reviewer disagreements, owns the clinical quality bar and currency cadence. *The project should not ship clinical content without this role filled.* |
 | **Credentialed reviewer pool** | TBD — physicians, RNs, paramedics, accredited first-aid instructors | **TO BE SECURED (critical)** | Perform the mandatory sign-off gate; verify content + illustrations + source currency; record sign-off. Rotation to avoid single-reviewer bias/fatigue. |
-| **License/IP reviewer** | TBD (may be Elyos-shared) | **TO BE SECURED** | Approves license posture, WHO-NC checks, illustration/emblem attestations. |
-| **Accessibility reviewer** | TBD (may be Elyos-shared, e.g. `a11y-alttext-commons`) | TBD | Verifies WCAG/print/offline/plain-language. |
+| **License/IP reviewer** | TBD (may be Hee-Lee Oss-shared) | **TO BE SECURED** | Approves license posture, WHO-NC checks, illustration/emblem attestations. |
+| **Accessibility reviewer** | TBD (may be Hee-Lee Oss-shared, e.g. `a11y-alttext-commons`) | TBD | Verifies WCAG/print/offline/plain-language. |
 | **Steward (last-mile / distribution)** | TBD partner or sibling-project owner | **TO BE SECURED** | Ensures shipped guides actually reach beneficiaries; owns the adoption log. |
-| **Partner / requestor** | TBD — first-aid NGO / community-health org / Elyos sibling | **TO BE SECURED** | Confirms the specific need (flips `verifiedNeed`), validates scope, distributes. |
+| **Partner / requestor** | TBD — first-aid NGO / community-health org / Hee-Lee Oss sibling | **TO BE SECURED** | Confirms the specific need (flips `verifiedNeed`), validates scope, distributes. |
 | **Regional reviewers (per locale)** | TBD per language/region | TO BE SECURED at M4 | Re-review translations for regional correctness (numbers/drugs/procedures). |
 
 > **Conflict of interest:** reviewers and stewards record affiliations; anyone with a commercial
-> first-aid-training conflict is disclosed and may be recused per the Elyos COI/veto checklist.
+> first-aid-training conflict is disclosed and may be recused per the Hee-Lee Oss COI/veto checklist.
 
 ---
 
@@ -439,9 +439,9 @@ JSON for the first M0 task.
 
 - **Authoritative sources** (read/cite only): ILCOR & councils, WHO, IFRC/national societies, govt
   health agencies. Dependency risk: guidelines change on cycles → handled by the freshness watcher.
-- **Elyos pieces:** Task schema (`packages/schema`), CLI workspace/PR flow (donated lane), registry,
+- **Hee-Lee Oss pieces:** Task schema (`packages/schema`), CLI workspace/PR flow (donated lane), registry,
   governance/COI process, CI/governance workflows.
-- **Sibling Elyos projects:** `vital-info-translations` / `emergency-phrasebooks` (translation),
+- **Sibling Hee-Lee Oss projects:** `vital-info-translations` / `emergency-phrasebooks` (translation),
   `a11y-alttext-commons` (alt-text/accessibility), `proper-prepper` (embeds guides; candidate
   internal requestor), `easy-read-plus` (plain/dyslexia-friendly versions),
   `community-resource-maps` (distribution).
@@ -503,7 +503,7 @@ JSON for the first M0 task.
   rotation prevents fatigue/bias. Re-reviews are first-class deeds (`maintenance` tasks).
 - **Outcome tracking:** O1–O9 reported per release; adoption log records real beneficiaries/orgs;
   errata log tracks correctness over time.
-- **Handoff:** the reusable pipeline + guardrail template (G6) lets other Elyos HIGH-risk health
+- **Handoff:** the reusable pipeline + guardrail template (G6) lets other Hee-Lee Oss HIGH-risk health
   projects (e.g. `food-safety-open`, `wash-guides`) inherit the gates rather than rebuild them.
 - **Bus-factor:** schema + gates encode the rules in tooling so the project's *safety* does not
   depend on any one person remembering them.
@@ -534,10 +534,10 @@ JSON for the first M0 task.
 
 ## 17. References
 
-- Elyos `CLAUDE.md` (work rules, lanes, quality bar, refusal guardrails).
-- Elyos `docs/good-deed-definition.md` (5 criteria + risk tiers; HIGH = expert sign-off before merge).
-- Elyos `packages/schema/src/schemas.ts` (Task JSON schema this plan maps to).
-- Elyos `planning/ROADMAP.md` (portfolio; first-aid-open listed Track 6, ⚪ selected, **high** risk).
+- Hee-Lee Oss `CLAUDE.md` (work rules, lanes, quality bar, refusal guardrails).
+- Hee-Lee Oss `docs/good-deed-definition.md` (5 criteria + risk tiers; HIGH = expert sign-off before merge).
+- Hee-Lee Oss `packages/schema/src/schemas.ts` (Task JSON schema this plan maps to).
+- Hee-Lee Oss `planning/ROADMAP.md` (portfolio; first-aid-open listed Track 6, ⚪ selected, **high** risk).
 - ILCOR / International Liaison Committee on Resuscitation — Consensus on Science with Treatment
   Recommendations (CoSTR) and member-council guidelines (AHA, ERC, Resuscitation Council UK, etc.).
 - World Health Organization — first-aid-relevant public-health guidance (note license terms,

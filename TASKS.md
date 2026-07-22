@@ -3,11 +3,11 @@
 > **Status:** Draft · **Version:** 0.1.0 · **Last updated:** 2026-06-28 ·
 > **Owner:** TBD (maintainer) · **Lane:** donated · **Risk tier:** HIGH
 
-Companion to `PLAN.md`. Milestones mirror PLAN §9 (M0–M5). Every task maps to an Elyos Task JSON.
+Companion to `PLAN.md`. Milestones mirror PLAN §9 (M0–M5). Every task maps to a Hee-Lee Oss Task JSON.
 
 ---
 
-## How these tasks map to Elyos
+## How these tasks map to Hee-Lee Oss
 
 Each row below becomes a Task JSON validated against `packages/schema/src/schemas.ts`. Field usage
 for this project:
@@ -204,7 +204,7 @@ Goal: durable maintenance + publish the reusable safety-content pipeline templat
 | first-aid-maintenance-503 | Report outcome metrics O1–O9; publish errata log process | maintenance | small | low | document | first-aid-code-203 | Maintainer |
 
 **Definition of Done (M5):** maintenance rota operating with ≥1 completed refresh cycle on a shipped
-guide; reusable pipeline/guardrail template published for other HIGH-risk Elyos health projects;
+guide; reusable pipeline/guardrail template published for other HIGH-risk Hee-Lee Oss health projects;
 O1–O9 reported; errata process live.
 
 ---
